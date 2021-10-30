@@ -1,0 +1,32 @@
+{%load static %}
+
+<div class="container my-5">
+    <form action="analyzer1" method='get'>
+        <div class="form-grup">
+            <label for="exampleFormControltextareal">
+                <h3>Enter your raw text and see the magic!!!!</h3>
+            </label>
+            <textarea class="form-control border border-primary border-2" name="text" id="exampleFormControltextareal" rows="9"></textarea>
+        </div>
+
+        <div class="form-check form-switch my-1">
+            <input class="form-check-input" type="checkbox" id="customSwitch1" name="removepunc">
+            <label class="form-check-label fw-normal text-success" for="customSwitch1">Remove Punctuation</label>
+        </div>
+        <div class="form-check form-switch my-1">
+            <input class="form-check-input" type="checkbox" id="customSwitch2" name="upper">
+            <label class="form-check-label fw-normal text-success" for="customSwitch2">Upper Case</label>
+        </div>
+        <div class="form-check form-switch my-1">
+            <input class="form-check-input" type="checkbox" id="customSwitch3" name="lineremove">
+            <label class="form-check-label fw-normal text-success" for="customSwitch3">Extra Line Remover</label>
+        </div>
+        <div class="form-check form-switch my-1">
+            <input class="form-check-input" type="checkbox" id="customSwitch4" name="spaceremove">
+            <label class="form-check-label fw-normal text-success " for="customSwitch4">Extra Space Remver</label>
+        </div>
+
+        <button type="submit" class="btn btn-dark my-1">Analyze</button>
+
+    </form>
+</div>
